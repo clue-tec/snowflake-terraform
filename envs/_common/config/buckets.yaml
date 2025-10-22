@@ -1,0 +1,24 @@
+# バケット毎に以下のSnowflakeリソースを作成する
+#   外部ステージ（バケット単位）
+#   スキーマ（バケット単位）
+#   ソーステーブル
+buckets:
+  - s3_bucket: s3://poc-clue-tec.com/
+    stage_name: POC_STAGE
+    schema: POC
+    comment: "PoC用スキーマ"
+    tables:
+      - name: PRODUCT
+        type: csv
+        comment: "製品マスタ"
+        columns:
+          - { name: ID, type: NUMBER, comment: "主キー" }
+          - { name: TEXT_DATA, type: VARCHAR, comment: "製品名" }
+
+  - s3_bucket: s3://demo-clue-tec.com/
+    stage_name: DEMO_STAGE
+    schema: DEMO
+    tables:
+      - name: RAW_EVENTS
+        type: json
+        comment: "イベントJSON"

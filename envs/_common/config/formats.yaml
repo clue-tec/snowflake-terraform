@@ -1,0 +1,26 @@
+
+default_file_formats:
+  CSV:
+    format_type: CSV
+    compression: NONE
+    field_delimiter: ","
+    skip_header: 1
+    null_if: ["\N","NULL",""]
+  CSV_GZ:
+    format_type: CSV
+    compression: GZIP
+    field_delimiter: ","
+    skip_header: 1
+    null_if: ["\N","NULL",""]
+  JSON:
+    format_type: JSON
+    compression: NONE
+    strip_outer_array: true
+    null_if: ["NULL"]
+  JSON_GZ:
+    format_type: JSON
+    compression: GZIP
+    strip_outer_array: true
+    null_if: ["NULL"]
+
+custom_file_formats: {}

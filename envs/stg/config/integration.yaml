@@ -1,0 +1,10 @@
+integration:
+  integration_name: STG_STORAGE_INTEGRATION
+  admin_database: STG_ADMIN
+  admin_schema: S3
+  source_database: STG_SOURCE
+  role_name: snowflake_s3_access_role
+  # 以下はSTG_STORAGE_INTEGRATION初回作成後に編集する
+  snowflake_iam_user_arn: "*"
+  snowflake_external_id: 0000
+  
