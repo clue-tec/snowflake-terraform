@@ -63,3 +63,6 @@ terraform plan
 terraform apply
 ```
 
+### ブログ記事
+
+* [Terraform、Snowflakeでs3連携・テーブルを一括管理する](https://www.clue-tec.com/blog/snowflake_terraform/)
