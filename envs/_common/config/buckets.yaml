@@ -3,7 +3,7 @@
 #   スキーマ（バケット単位）
 #   ソーステーブル
 buckets:
-  - s3_bucket: s3://poc-clue-tec.com/
+  - s3_bucket: s3://poc-clue-tec-com/
     stage_name: POC_STAGE
     schema: POC
     comment: "PoC用スキーマ"
@@ -15,7 +15,7 @@ buckets:
           - { name: ID, type: NUMBER, comment: "主キー" }
           - { name: TEXT_DATA, type: VARCHAR, comment: "製品名" }
 
-  - s3_bucket: s3://demo-clue-tec.com/
+  - s3_bucket: s3://demo-clue-tec-com/
     stage_name: DEMO_STAGE
     schema: DEMO
     tables:
